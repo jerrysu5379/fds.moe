@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>Project-MINE</title>
+    <meta name="keywords" content="Project-MINE">
+    <style>
+        .bg {
+            background: url(/static/pictures/main.png)no-repeat;
+            background-size: cover;
+            background-position: 50% 0px;
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            z-index: -100;
+        }
+
+        .cont {
+            display: block;
+            padding: 10px;
+        }
+
+        #title {
+            padding-top: 12%;
+            display: flex;
+            justify-content: center;
+        } 
+
+        #name {
+            color: #FFFFFF;
+            text-shadow: 2px 2px 2px grey;
+            font-weight: bolder;
+            font-size: 60px;
+        }
+
+        #des { 
+            padding-top: 5%;
+            display: flex;
+            justify-content: center; 
+            color: #FFFFFF;
+            text-shadow: 2px 2px 2px grey;
+            font-weight: bolder;
+            font-size: 30px; 
+        }
+
+        button {
+            width: 200px;
+            height: 50px;
+            font-size: 20px;
+            font-weight: bold;
+            border: 5px solid white;
+            background-color: #EBB1BF;
+            color: black;
+            text-decoration-line: underline;
+        }
+
+        button:hover {
+            background-color: white;
+            border: 5px solid black;
+            color: #EBB1BF;
+            font-weight: bold;
+        }
+
+        #button {
+            text-align: center;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        #button button {
+            margin-top: 5%;
+            margin-bottom: 5%;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+        .hide {
+            color: rgba(0, 0, 0, 0%);
+            text-shadow: none;
+            font-size: 60px;
+        }
+
+        @media (max-width: 767px) {
+            #name {
+                color: #FFFFFF;
+                text-shadow: 2px 2px 2px grey;
+                font-weight: bolder;
+                font-size: 30px;
+            }
+
+            button {
+                width: 130px;
+                height: auto;
+                font-size: 15px;
+            }
+
+            .hide {
+                color: rgba(0, 0, 0, 0%);
+                text-shadow: none;
+                font-size: 30px;
+            }
+
+            #title {
+                padding-top: 20%;
+                display: flex;
+                justify-content: center;
+            }
+
+            #des {
+                color: #FFFFFF;
+                text-shadow: 2px 2px 2px grey;
+                font-weight: bolder;
+                font-size: 20px;
+            }
+
+            button {
+                border: 3px solid white;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+
+            button:hover {
+                border: 3px solid black;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="bg"></div>
+
+    <div class="navbar"></div>
+    <div class="cont">
+        <div id="title">
+            <div id="name">
+                <p>Field of Dream Studio </p>
+            </div>
+        </div> 
+        <div id="des">
+            <p>幻梦至实 </p> 
+        </div> 
+        <br> 
+        <div id="button">
+            <button id="Download">下载作品></button>
+            <a href="/join/join.html"><button id="Join Us">加入我们></button></a>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="footdiv"></div>
+    <script type="text/javascript" src="static/libs/jquery.js"></script>
+    <script type="text/javascript" src="static/load.js"></script>
+</body>
+
+</html>
